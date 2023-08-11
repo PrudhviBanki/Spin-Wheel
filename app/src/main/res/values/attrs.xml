@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyTextView">
+        <attr name="font" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LuckyWheelView">
+        <attr name="lkwBackgroundColor" format="color" />
+        <attr name="lkwCursor" format="reference" />
+        <attr name="lkwCenterImage" format="reference" />
+        <attr name="lkwTextColor" format="color" />
+        <attr name="lkwEdgeColor" format="color" />
+        <attr name="lkwEdgeWidth" format="integer" />
+        <attr name="wheelStrokeColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ScratchView">
+        <attr name="overlay_image" format="reference" />
+        <attr name="tile_mode" format="string" />
+        <attr name="overlay_width" format="dimension" />
+        <attr name="overlay_height" format="dimension" />
+    </declare-styleable>
+
+
+</resources>

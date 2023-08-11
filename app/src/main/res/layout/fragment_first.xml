@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+
+        <WebView
+            android:id="@+id/web_vv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvv_vv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:gravity="center"
+            android:text="Click here to SCRATCH"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:background="@color/white">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:elevation="2dp"
+                app:srcCompat="@drawable/triagle" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_circle_bg"
+                android:paddingTop="10sp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:padding="8sp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:elevation="10sp"
+                        android:gravity="center">
+
+                        <com.prudhvi.spinwheel.LuckyWheelView
+                            android:id="@+id/luckyWheel"
+                            android:layout_width="280sp"
+                            android:layout_height="280sp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            app:lkwBackgroundColor="@android:color/transparent"
+                            app:lkwCenterImage="@drawable/center_mg"
+                            app:lkwTextColor="#212121" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_first"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="10sp"
+            android:text="@string/next" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/gallery"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="10sp"
+            android:text="@string/scratch" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/bg_removed"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_circular_s"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/confetti"/>
+</RelativeLayout>

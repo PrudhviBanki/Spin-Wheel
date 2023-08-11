@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="310dp"
+            android:layout_height="310dp"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="@color/white">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/sc_bg"
+                android:gravity="center">
+
+                <com.prudhvi.spinwheel.ScratchView
+                    android:id="@+id/sct"
+                    android:layout_width="310dp"
+                    android:layout_height="310dp"
+                    android:layout_gravity="center"
+                    app:overlay_height="300dp"
+                    app:overlay_image="@drawable/ic_scratch"
+                    app:overlay_width="300dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>
